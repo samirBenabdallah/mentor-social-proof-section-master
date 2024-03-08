@@ -1,0 +1,135 @@
+/*  variable and main params  */
+:root {
+  --card-bg: #502050;
+  --pink: #ee68a4;
+  --Dark-Grayish-Magenta: #937b92;
+  --Light-Grayish-Magenta: #f7f2f7;
+  --White: #ffffff;
+}
+html {
+  font-size: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+/*  main classes  */
+.font-500 {
+  font-weight: 500;
+}
+.font-700 {
+  font-weight: 700;
+}
+/* body style and background */
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+body > main {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+}
+main > picture {
+  position: absolute;
+}
+main > picture:first-of-type {
+  top: 0;
+  left: 0;
+}
+main > picture:last-of-type {
+  bottom: 0;
+  right: 0;
+}
+/*  container style  */
+.container {
+  height: 50%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+/*  container aside style*/
+.container aside {
+  width: 50%;
+  padding-right: 20%;
+}
+.container .title {
+  font-size: 4rem;
+  color: var(--card-bg);
+}
+.container .paragraphe {
+  margin-top: 20px;
+  color: var(--Dark-Grayish-Magenta);
+}
+/*  rating style  */
+.rating {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rating > div {
+  color: var(--card-bg);
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--Light-Grayish-Magenta);
+  display: flex;
+}
+.rating > div:nth-child(2) {
+  margin: 10px 10%;
+}
+.rating > div:last-child {
+  margin-left: 20%;
+}
+.stars {
+  margin-right: 20px;
+}
+/*  container end  */
+/*  card style  */
+.card {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card > div {
+  padding: 15px;
+  border-radius: 20px;
+  width: 25%;
+  height: 75%;
+  background-color: var(--card-bg);
+}
+.card > div:nth-child(2) {
+  margin-top: 20px;
+}
+.card > div:last-child {
+  margin-top: 40px;
+}
+/*  header style  */
+.card header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+.card header img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.info p:first-child {
+  color: var(--White);
+}
+.info p:last-child {
+  color: var(--pink);
+}
+.card > div > p {
+  margin-block: 30px;
+  color: var(--White);
+  line-height: 20px;
+}

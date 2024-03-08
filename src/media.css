@@ -1,0 +1,63 @@
+@media screen and (max-width: 1000px) {
+  main > section > * {
+    z-index: 1;
+  }
+  .card > div {
+    width: 50%;
+  }
+  main > section {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: min-content !important;
+    z-index: 1;
+  }
+  .rating {
+    width: 100%;
+    align-items: center;
+  }
+  .rating > div {
+    width: 40%;
+    justify-content: space-between;
+    margin: 20px 0 !important;
+  }
+  .container > aside {
+    padding: 0;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container > aside {
+    width: 80%;
+  }
+  .rating > div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 690px) {
+  .rating > div {
+    width: 60%;
+  }
+  .card > div {
+    width: 70%;
+  }
+  body > main {
+    height: min-content;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container > aside {
+    width: 100%;
+  }
+  
+  .card > div {
+    width: 90%;
+  }
+  .rating > div {
+    width: 90%;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem !important;
+  }
+}
